@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 12px;
+    font-family: sans-serif;
+    background-color: rgb(39, 37, 37);
+}
+
+img{
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.item{
+    height: 100vh;
+    width: 100%;
+    flex: 1;
+    cursor: pointer;
+    transition: 0.7s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.item.show{
+    flex: 3;
+}
+
+.legenda{
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 15px;
+    opacity: 0; 
+}
+
+.item.show .legenda{
+    bottom: 15px;
+    opacity: 1;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+.rodape{
+    text-align: center;
+    color: #FFF;
+    padding: 12px;
+}
+
+@media screen {
+    ::selection{
+        flex-direction: column;
+        max-width: 768px;
+    }
+}

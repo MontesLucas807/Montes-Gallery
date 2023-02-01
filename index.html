@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Montes Gallery</title>
+
+</head>
+
+    <header>
+        <nav  id="menu-h">
+            <ul>
+                <li><a href="https://www.instagram.com/montes_lucas02/?igshid=Mzc0YWU1OWY%3D">Instagran</a></li>
+                <li><a href="https://github.com/MontesLucas807">Git Hub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    
+    <section>
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.04.jpeg">
+            <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.05.jpeg">
+            <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.06.jpeg">
+            <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.09.jpeg"> <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.10.jpeg"> <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.12 (1).jpeg"> <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.13.jpeg"> <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/WhatsApp Image 2023-01-27 at 23.42.50.jpeg"> <div class="legenda">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const items = document.querySelectorAll(".item");
+    items.forEach((item) => {
+        item.addEventListener("click",() =>{
+            if(item.classList.contains("show")){
+                item.classList.remove("show");
+            }
+            else{
+                item.classList.add("show");
+            }
+            //items.forEach((item) => item.classList.remove("show"));
+            
+        });
+    });
+    </script>
+
+    <footer>
+       <div class="rodape"> 
+        <p>
+            Copyright &copy; 28/01/2023 | Lucas Montes de Oliveira 
+        </p>
+       </div>
+    </footer>
+
+</body>
+</html>
